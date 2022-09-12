@@ -1,0 +1,28 @@
+<!--
+<form>
+  <input type="text" #key  (keyup)="getValue(key.value)">
+  <div [ngSwitch]="animal" >
+
+    <div *ngSwitchCase="'dog'">{{animal}} </div>
+
+    <div *ngSwitchCase="'cat'">{{animal}}</div>
+
+
+    <div *ngSwitchCase="'cow'">{{animal}}</div>
+    
+  </div>
+</form>
+-->
+<input type="text" #key  (keyup)="getValue(key.value)">
+<div>
+<ng-container [ngSwitch]="animal">
+  <img *ngSwitchCase="'cow'" src="../assets/images/cow.jpg" />
+  <img *ngSwitchCase="'cat'" src="../assets/images/cats.jpg" />
+  <img *ngSwitchCase="'dog'" src="../assets/images/download.jpg" />
+</ng-container>
+</div>
+ <router-outlet></router-outlet>
+
+
+
+
